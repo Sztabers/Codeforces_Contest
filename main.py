@@ -1,6 +1,4 @@
-import requests
 import json
-import pprint
 import urllib.request
 from collections import Counter
 import pandas as pd
@@ -10,10 +8,6 @@ user_URL = 'https://codeforces.com/api/contest.list?gym=true'
 
 with urllib.request.urlopen(user_URL) as url:
 		user_data = json.loads(url.read().decode())
-
-
-pp = pprint.PrettyPrinter(indent=4)
-# pp.pprint(user_data)
 
 countries = []
 
