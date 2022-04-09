@@ -29,6 +29,6 @@ df = df.head(10)
 
 
 df.plot(x ='Country', y='Contests', kind = 'bar')
-# plt.show()
+plt.show()
 
 
